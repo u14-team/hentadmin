@@ -1,0 +1,7 @@
+{
+  "name": "HENTADMIN",
+  "script": "./",
+  "args": ["--color"],
+  "watch": false,
+  "interpreter": "nodemon"
+}

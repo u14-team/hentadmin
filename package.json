@@ -1,0 +1,25 @@
+{
+  "name": "hentadmin",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "clear; yarn build && yarn start",
+    "start": "node .",
+    "build": "tsc --project tsconfig.json"
+  },
+  "dependencies": {
+    "@koa/cors": "2",
+    "@types/koa": "^2.11.3",
+    "@types/node": "^13.9.5",
+    "chalk": "^3.0.0",
+    "crypto": "^1.0.1",
+    "koa": "^2.11.0",
+    "koa-router": "^8.0.8",
+    "password-hash": "^1.2.2",
+    "pg": "^8.0.2",
+    "sequelize": "^5.21.6",
+    "socket.io": "^2.3.0",
+    "vk-io": "^4.0.0-rc.30"
+  }
+}

@@ -10,7 +10,7 @@ export class VK extends VKLibrary {
   }
 
   init() {
-    this.setOptions({ token: this.ha.config.vkToken });
+    this.setOptions({ token: this.ha.lolire.config.vkToken });
     return this.checkToken();
   }
 

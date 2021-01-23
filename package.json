@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "clear; yarn build && yarn start",
     "start": "node .",
-    "build": "tsc --project tsconfig.json"
+    "build": "tsc --project tsconfig.json",
+    "release-it": "yarn version && git push --follow-tags"
   },
   "dependencies": {
     "@koa/cors": "2",
@@ -16,7 +17,7 @@
     "crypto": "^1.0.1",
     "koa": "^2.11.0",
     "koa-router": "^8.0.8",
-    "lolire": "^0.2.2",
+    "lolire": "^0.2.4",
     "password-hash": "^1.2.2",
     "pg": "^8.0.2",
     "sequelize": "^5.21.6",

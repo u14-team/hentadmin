@@ -1,4 +1,9 @@
 # HentAdmin
+<p align="center">
+	<a href="https://travis-ci.org/u14-team/hentadmin">
+		<img src="https://img.shields.io/travis/u14-team/hentadmin.svg?style=flat-square" alt="Build Status">
+	</a>
+</p>
 This is HentAdmin
 
 Use it in screen or other process manager.

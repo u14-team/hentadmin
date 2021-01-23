@@ -1,0 +1,6 @@
+**/src/**
+.travis.yml
+test
+tsconfig.json
+yarn.lock
+.gitignore

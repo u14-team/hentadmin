@@ -3,3 +3,5 @@ config.json
 lib/**
 **.log
 yarn.lock
+**.sqlite3
+pm2.json

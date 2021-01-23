@@ -5,12 +5,11 @@ export class VK extends VKLibrary {
   ha: Hentadmin;
 
   constructor(ha) {
-    super();
+    super({ token: ha.lolire.config.vkToken });
     this.ha = ha;
   }
 
   init() {
-    this.setOptions({ token: this.ha.lolire.config.vkToken });
     return this.checkToken();
   }
 

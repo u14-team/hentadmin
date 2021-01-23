@@ -8,7 +8,7 @@ import { BotManager } from './bot/manager';
 export class Hentadmin {
   lolire = new Lolire();
   logger = this.lolire.logger;
-  vk = new VK(this);
+  vk: VK;
   botManager = new BotManager(this);
 
   version: string;
@@ -27,6 +27,7 @@ export class Hentadmin {
         initCli
       });
 
+      this.vk = new VK(this);
       await this.vk.init();
       await this.botManager.init();
     } catch (error) {

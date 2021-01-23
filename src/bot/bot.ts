@@ -14,7 +14,6 @@ export class Bot extends Sequelize.Model {
   id: number;
   path: string;
   ownerId: number;
-  members: number[];
   status: BotStatus;
   info: BotInfo;
   hasErrors: boolean;
@@ -35,7 +34,7 @@ export async function initBotModel(ha) {
   Bot.init({
     path: { type: Sequelize.STRING, allowNull: false },
     ownerId: { type: Sequelize.INTEGER, allowNull: false },
-    members: { type: Sequelize.ARRAY(Sequelize.INTEGER), allowNull: false, defaultValue: [] },
+    // members: { type: Sequelize.ARRAY(Sequelize.INTEGER), allowNull: false, defaultValue: [] },
     status: { type: Sequelize.STRING, allowNull: false, defaultValue: 'disabled' },
     info: Sequelize.JSON,
     hasErrors: { type: Sequelize.BOOLEAN, allowNull: false, defaultValue: false },

@@ -73,7 +73,7 @@ export class BotProcessManager {
         return; // Ignore vk timeout warnings
       }
 
-      this.core.lolire.warning(`Bot ${bot.info.name} has errors!`);
+      this.core.lolire.warning(`Bot ${bot.info ? bot.info.name : `#${bot.id}`} has errors!`);
       this.core.lolire.server.ws.emitId('bot_error', { id: bot.id, error: chunk }, bot.ownerId);
       this.core.botManager.errorLog.registerError(bot, chunk);
     }

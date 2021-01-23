@@ -3,5 +3,5 @@
   "script": "./",
   "args": ["--color"],
   "watch": false,
-  "interpreter": "/home/theevolk/.nvm/versions/node/v12.14.1/bin/node"
+  "interpreter": "/home/theevolk/.nvm/versions/node/v15.0.1/bin/node"
 }

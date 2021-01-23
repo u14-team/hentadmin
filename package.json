@@ -1,6 +1,6 @@
 {
   "name": "hentadmin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
@@ -16,6 +16,7 @@
     "crypto": "^1.0.1",
     "koa": "^2.11.0",
     "koa-router": "^8.0.8",
+    "lolire": "^0.2.2",
     "password-hash": "^1.2.2",
     "pg": "^8.0.2",
     "sequelize": "^5.21.6",
